@@ -1,28 +1,34 @@
-Package: BuildABiocWorkshop2020
-Title: Bioconductor Workshop Template and Github Actions
+Package: trackViewerBiocAsia2020Workshop
+Title: trackViewer: Lollipop/Dandelion plots for methylation status and mutation data
 Version: 0.1.1
 Authors@R: 
-    person(given = "Sean",
-           family = "Davis",
+    c(person(given = "Jianhong",
+           family = "Ou",
            role = c("aut", "cre"),
-           email = "seandavi@gmail.com",
-           comment = c(ORCID = "your-orc-id-here"))
-Description: This package serves as a template for using github actions to 
-    prepare a Bioconductor Workshop package for use. In particular,
-    a pkgdown website and docker image are generated based on workflow 
-    settings. 
+           email = "jianhong.ou@duke.edu",
+           comment = c(ORCID="0000-0002-8652-2488")),
+      person("Lihua Julie Zhu", "Developer", role = "aut",
+           email = "Julie.Zhu@umassmed.edu"))
+Description: The trackViewer package can be used to generate lollipop plot to 
+    depict the methylation and SNP/mutation status, together with coverage data
+    and annotation tracks to facilitate integrated analysis of multi-omics data.
+    In addition, trackViewer can be easily integrated into standard analysis 
+    pipeline for various high-throughput sequencing dataset such as ChIP-seq, 
+    RNA-seq, methylation-seq or DNA-seq. The images produced by trackViewer 
+    are highly customizable including labels, symbols, colors and size. 
+Maintainer: Jianhong Ou <jianhong.ou@duke.edu>
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
-Depends: 
-    Biobase
-Suggests: 
-    knitr,
-    rmarkdown,
-    pkgdown
-URL: https://seandavi.github.io/BuildABiocWorkshop2020/
-BugReports: https://github.com/seandavi/BuildABiocWorkshop2020/issues/new/choose
+Depends: R (>= 4.0.0), methods, trackViewer
+Imports: graphics, utils
+Suggests: pander, VariantAnnotation, 
+          TxDb.Hsapiens.UCSC.hg19.knownGene, org.Hs.eg.db,
+          GenomicFeatures, org.Mm.eg.db, knitr
+biocViews: Visualization, Sequencing, Alignment, ChIPchip, ChIPSeq
+URL: https://jianhong.github.io/trackViewerBiocAsia2020Workshop/
+BugReports: https://github.com/jianhong/trackViewerBiocAsia2020Workshop/issues/new/choose
 VignetteBuilder: knitr
-DockerImage: seandavi/buildabiocworkshop2020:latest
+DockerImage: jianhong/trackviewerbiocasia2020workshop:latest
