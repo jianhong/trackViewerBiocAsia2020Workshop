@@ -1,9 +1,10 @@
 # dagLogo workshop
 
-![.github/workflows/push_docker.yaml](https://github.com/jianhong/trackViewerBiocAsia2020Workshop/workflows/.github/workflows/push_docker.yaml/badge.svg)
+![.github/workflows/basic_checks.yaml](https://github.com/jianhong/trackViewerBiocAsia2020Workshop/workflows/.github/workflows/basic_checks.yaml/badge.svg)
 
 [github page](https://jianhong.github.io/trackViewerBiocAsia2020Workshop/) | 
-[source code](https://github.com/jianhong/trackViewerBiocAsia2020Workshop)
+[source code](https://github.com/jianhong/trackViewerBiocAsia2020Workshop) |
+[slides](https://github.com/jianhong/trackViewerBiocAsia2020Workshop/blob/master/inst/extdata/slides.pdf)
 
 This package will create the docker file for the tools used for trackViewer, the sample code and files to run the pipeline, and
 the slides for the course.
