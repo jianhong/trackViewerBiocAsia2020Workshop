@@ -78,6 +78,18 @@ packageVersion("trackViewer")
 
 ## Quick start for lollipop plot
 
+```{r}
+## load library
+library(trackViewer)
+mut <- GRanges("chr1", IRanges(c(20, 100), width=1, names=c("snp1", "snp2")))
+features <- GRanges("chr1", IRanges(start=c(10, 80), end=c(50, 180), 
+                                    names=c("5'UTR", "CDS1")))
+lolliplot(mut, features)
+```
+
+
+## 3 steps for lollipop plot
+
 ### Step 1. Prepare the methylation/variant/mutation data
 
 The input data for lollipop plot by _trackViewer_ is an object of _GenomicRanges_::`GRanges`.
